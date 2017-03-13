@@ -1,0 +1,51 @@
+body{
+    font-family: '微软雅黑';
+}
+.wrapper{
+    margin: 30px auto;
+    width: 80%
+}
+.wrapper .left{
+    float: left;
+    margin-left: 50px;
+}
+.wrapper .right{
+    width: 60%;
+    float: right;
+    margin-top: 0;
+}
+.wrapper .right p{
+	margin-top: 0;
+}
+.wrapper .right ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    display: inline
+}
+.wrapper .right ul li{
+    display: inline-block;
+    margin-top: 20px
+}
+.wrapper .right img{
+    height: 120px;
+    width: 120px;
+    margin: 8px
+}	
+input{
+	width: 200px;
+	height: 20px;
+}
+
+input[name="sub"]{
+	background-color: #9cf;
+	height: 26px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+}
+meter{
+    width: 180px
+}

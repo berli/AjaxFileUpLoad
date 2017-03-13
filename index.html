@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>原生js实现无刷新上传文件并显示进度条</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+    <div class="wrapper">
+        <div class="left">
+            <!--表单-->
+            <form enctype="multipart/form-data">
+                <table>
+                    <tr>
+                        <td>用户名</td>
+                        <td><input type="text" name="user" required></td>
+                    </tr>
+                    <tr>
+                        <td>密码</td>
+                        <td><input type="password" name="pass" required></td>
+                    </tr>
+                   
+                    <tr>
+                        <td>图片1</td>
+                        <td><input type="file" name="imgs[]" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>图片2</td>
+                        <td><input type="file" name="imgs[]" required></td>
+                    </tr>
+                    <tr>
+                        <td>图片3</td>
+                        <td><input type="file" name="imgs[]" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="提交" name="sub"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <!--结果预览-->
+        <div class="right">
+            <p>ajax无刷新界面返回结果：</p>
+            <table>
+                <tr>
+                    <td>用户名</td>
+                    <td><input type="text" id="user" readonly></td>
+                </tr>
+                <tr>
+                    <td>密码</td>
+                    <td><input type="text" id="pass" readonly></td>
+                </tr>
+            </table>
+            <ul>
+                <li> 头像1
+                    <img src="" class="imgs" alt="头像1">
+                </li>
+                <li> 头像2
+                    <img src="" class="imgs" alt="头像1">
+                </li>
+                <li> 头像3
+                    <img src="" class="imgs" alt="头像3">
+                </li>  
+                <li> 上传进度
+                    <meter value="0"></meter>
+                    <span>0%</span>
+                </li>                            
+            </ul>        
+        </div>
+    </div>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
